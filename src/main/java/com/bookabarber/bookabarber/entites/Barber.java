@@ -11,26 +11,24 @@ import javax.persistence.Table;
 import java.util.UUID;
 
 @Data
-@Table(name = "Barber")
+@Table(name = "Barbers")
 @Entity
 @AllArgsConstructor
 public class Barber {
 
     public Barber(){
-        this.barberId = UUID.randomUUID().toString();
+        this.id = UUID.randomUUID().toString();
     }
 
     @Id
-    @Column(name = "barberId")
-    private String barberId;
-    @Column(name = "firstName")
-    private String barberFirstName;
-    @Column(name = "barberMiddleName")
-    private String barberMiddleName;
+    @Column(name = "id")
+    private String id;
+    @Column(name = "barberName")
+    private String barberName;
     @Column(name = "barberLastName")
     private String barberLastName;
-    @Column(name = "barberNationalIdName")
-    private String barberNationalIdNumber;
+    @Column(name = "barberNationalIdentityNumber")
+    private String barberNationalIdentityNumber;
     @Column(name = "barberPhoneNumber")
     private String barberPhoneNumber;
     @Column(name = "barberEmailAddress")

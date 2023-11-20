@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/barber")
+@CrossOrigin
 public class BarberController {
 
     private BarberService barberService;

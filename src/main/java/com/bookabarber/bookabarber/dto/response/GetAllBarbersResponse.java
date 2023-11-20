@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GetAllBarbersResponse {
-    private String barberFirstName;
-    private String barberMiddleName;
+
+    private String barberName;
     private String barberLastName;
     private String barberNationalIdNumber;
     private String barberPhoneNumber;

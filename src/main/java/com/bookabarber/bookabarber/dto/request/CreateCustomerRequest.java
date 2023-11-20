@@ -1,5 +1,6 @@
 package com.bookabarber.bookabarber.dto.request;
 
+import com.sun.istack.Nullable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,24 +10,26 @@ import javax.validation.constraints.NotNull;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreateBarberRequest {
+public class CreateCustomerRequest {
 
     @NotNull
     @NotBlank
-    private String barberName;
+    private String customerName;
     @NotNull
     @NotBlank
-    private String barberLastName;
+    private String customerLastName;
     @NotNull
     @NotBlank
-    private String barberNationalIdentityNumber;
+    private String customerNationalIdentityNumber;
     @NotNull
     @NotBlank
-    private String barberPhoneNumber;
+    private String customerPhoneNumber;
     @NotNull
     @NotBlank
-    private String barberEmailAddress;
+    private String customerEmailAddress;
     @NotNull
     @NotBlank
-    private String barberShopName;
+    private String customerHomeAddress;
+    @Nullable
+    private String favoriteBarberShop;
 }
